@@ -23163,7 +23163,7 @@ $iF4:1}
 A.ae8.prototype={
 $1(a){var s=A.cn().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/89c39edfdfae2949f6806e4a315c0c08522238b7/":s)+a},
+return(s==null?"canvaskit/":s)+a},
 $S:96}
 A.Fk.prototype={
 gu(a){var s=this.a

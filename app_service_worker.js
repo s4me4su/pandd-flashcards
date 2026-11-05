@@ -1,4 +1,4 @@
-// PandD ID Trainer - service worker.
+﻿// PandD ID Trainer - service worker.
 //
 // What it buys: once a friend has opened the page once, the app keeps working
 // with no network at all (plane, subway, dead signal), and a second visit
@@ -12,10 +12,10 @@
 //   * anything cross-origin -> untouched. There is nothing cross-origin in
 //     this app: the web build ships its own CanvasKit and fonts.
 //
-// build_web.ps1 replaces __BUILD_VERSION__ on every build, which is what makes
+// build_web.ps1 replaces 20261105181456 on every build, which is what makes
 // browsers notice this file changed.
 
-const VERSION = '__BUILD_VERSION__';
+const VERSION = '20261105181456';
 const SHELL_CACHE = 'pandd-shell-' + VERSION;
 const IMAGE_CACHE = 'pandd-images-' + VERSION;
 
