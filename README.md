@@ -18,7 +18,8 @@ Works on phones, tablets and computers — mouse or touch.
 ## Android app (APK)
 
 Prefer an app? Download **PandD-Flashcards.apk** from the
-[Releases page](https://github.com/s4me4su/pandd-flashcards/releases) and install it:
+[Releases page of the PandD_ID repo](https://github.com/s4me4su/PandD_ID/releases/tag/card-flipper)
+(release **"PandD"**, tag `card-flipper`) and install it:
 
 1. Tap the APK download.
 2. Android will warn about "unknown sources" / "not verified by Play Protect" —
