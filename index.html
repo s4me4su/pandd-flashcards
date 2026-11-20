@@ -62,7 +62,8 @@
     (function () {
       var splash = document.getElementById('splash'), tries = 0;
       var timer = setInterval(function () {
-        if (document.querySelector('flutter-view') || ++tries > 600) {
+        if (document.querySelector('flutter-view') ||
+            (++tries > 600 && !splash.dataset.stuck)) {
           clearInterval(timer);
           splash.style.opacity = '0';
           setTimeout(function () { splash.remove(); }, 320);
@@ -83,6 +84,48 @@
     }
   </script>
 
-  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // Load Flutter. Pages answers with "cache-control: max-age=600", so a 404
+    // seen while a deploy is still rolling out sits in the browser cache, or in
+    // a proxy in front of it, for ten minutes: reloading keeps hitting that
+    // cached 404 and the page looks dead on the splash screen. Retrying the
+    // same URL returns the same cached 404, so each retry asks for a fresh
+    // query string, which no cache can shadow.
+    (function () {
+      var tries = 0;
+      function load() {
+        var s = document.createElement('script');
+        s.src = tries === 0
+            ? 'flutter_bootstrap.js'
+            : 'flutter_bootstrap.js?try=' + tries + '-' + Date.now();
+        s.async = true;
+        s.onerror = function () {
+          s.remove();
+          if (++tries <= 4) { setTimeout(load, 400 * tries); } else { stuck(); }
+        };
+        document.body.appendChild(s);
+      }
+      // Still no first frame after the retries: say so instead of leaving a
+      // dark screen with a bar that slides forever.
+      function stuck() {
+        var splash = document.getElementById('splash');
+        if (!splash || document.querySelector('flutter-view')) return;
+        splash.dataset.stuck = '1';   // keep it: the fading timer must not go now
+        splash.innerHTML =
+            '<img src="icons/Icon-192.png" alt="">' +
+            '<div>Could not load the deck</div>' +
+            '<small>The site was probably mid-update. Try again in a moment.</small>' +
+            '<button id="retry" style="padding:10px 22px;border-radius:999px;border:0;' +
+            'background:#19C37D;color:#08240f;font:600 15px system-ui,sans-serif">' +
+            'Try again</button>';
+        document.getElementById('retry').onclick = function () {
+          tries = 0;
+          this.textContent = 'Trying...';
+          load();
+        };
+      }
+      load();
+    })();
+  </script>
 </body>
 </html>

@@ -12,10 +12,10 @@
 //   * anything cross-origin -> untouched. There is nothing cross-origin in
 //     this app: the web build ships its own CanvasKit and fonts.
 //
-// build_web.ps1 replaces 20261120212313 on every build, which is what makes
+// build_web.ps1 replaces 20261120213611 on every build, which is what makes
 // browsers notice this file changed.
 
-const VERSION = '20261120212313';
+const VERSION = '20261120213611';
 const SHELL_CACHE = 'pandd-shell-' + VERSION;
 const IMAGE_CACHE = 'pandd-images-' + VERSION;
 
