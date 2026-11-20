@@ -43,9 +43,11 @@ Each card has two sides:
 | **Swipe left** (or red ✗) | "Not sure" - red REVIEW stamp, top-right; marks it for review |
 | **← button** (or Backspace) | Previous card, to look at an answer again. It does not undo the swipe |
 | **Trash icon** | Remove this card from the deck (until reset) |
-| **Filter dropdown** (top bar) | It opens on **First test** - the 42 cards on the examiner's list for the first test. Also All 87, Exam 71, or by group (Fungi, Coleoptera, …) |
+| **Filter dropdown** (top bar) | It opens on **First test** - the 42 cards on the examiner's list for the first test. Also All 87, Exam 71, **Top 30** (the 30 most common) and **Other 12** (the other 12 of the 42), or by group (Fungi, Coleoptera, …) |
 | **Save icon** (top right) | Save progress — the app also saves automatically |
 | **Refresh icon** (top right) | Reset & reshuffle: full deck returns, removed cards come back |
+
+Cards from the wall's top-30 panel show a small "TOP 30" tag at the top of the card front. It only says how common that pest is - it never gives the name away, and the back of the card is the sheet exactly as printed.
 
 The First-test filter leaves two sheets out on purpose (Budworm, Cossid Moth): they are photographed off the wall but are not on the examiner's list for this test, so they are simply not in that filter.
 
