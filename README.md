@@ -39,12 +39,15 @@ Each card has two sides:
 | Action | What it does |
 |---|---|
 | **Tap the card** | Flip it over |
-| **Swipe right** (or green ✓) | "I know this one" |
-| **Swipe left** (or red ✗) | "Not sure" — marks it for review |
+| **Swipe right** (or green ✓) | "I know this one" - green KNOWN stamp, top-left |
+| **Swipe left** (or red ✗) | "Not sure" - red REVIEW stamp, top-right; marks it for review |
+| **← button** (or Backspace) | Previous card, to look at an answer again. It does not undo the swipe |
 | **Trash icon** | Remove this card from the deck (until reset) |
-| **Filter dropdown** (top bar, "All ▾") | Study a subset: All 87, Exam 71, or by group (Fungi, Coleoptera, Homoptera, …) |
+| **Filter dropdown** (top bar) | It opens on **First test** - the 42 cards on the examiner's list for the first test. Also All 87, Exam 71, or by group (Fungi, Coleoptera, …) |
 | **Save icon** (top right) | Save progress — the app also saves automatically |
 | **Refresh icon** (top right) | Reset & reshuffle: full deck returns, removed cards come back |
+
+The First-test filter leaves two sheets out on purpose (Budworm, Cossid Moth): they are photographed off the wall but are not on the examiner's list for this test, so a line under the progress bar says so.
 
 When you finish the deck, you get a summary of everything you marked
 **for review**, so you can reshuffle and go straight at the ones you keep
