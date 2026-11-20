@@ -47,7 +47,7 @@ Each card has two sides:
 | **Save icon** (top right) | Save progress — the app also saves automatically |
 | **Refresh icon** (top right) | Reset & reshuffle: full deck returns, removed cards come back |
 
-The First-test filter leaves two sheets out on purpose (Budworm, Cossid Moth): they are photographed off the wall but are not on the examiner's list for this test, so a line under the progress bar says so.
+The First-test filter leaves two sheets out on purpose (Budworm, Cossid Moth): they are photographed off the wall but are not on the examiner's list for this test, so they are simply not in that filter.
 
 When you finish the deck, you get a summary of everything you marked
 **for review**, so you can reshuffle and go straight at the ones you keep
