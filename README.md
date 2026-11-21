@@ -43,11 +43,14 @@ Each card has two sides:
 | **Swipe left** (or red ✗) | "Not sure" - red REVIEW stamp, top-right; marks it for review |
 | **← button** (or Backspace) | Previous card, to look at an answer again. It does not undo the swipe |
 | **Trash icon** | Remove this card from the deck (until reset) |
+| **Lightbulb icon** (or C) | **Clues**: one hint at a time, from the examiner's own word bank - first the life cycle (holometabolous / hemimetabolous), then the group (Lepidoptera, Fungi, ...) |
 | **Filter dropdown** (top bar) | It opens on **First test** - the 42 cards on the examiner's list for the first test. Also All 87, Exam 71, **Top 30** (the 30 most common) and **Other 12** (the other 12 of the 42), or by group (Fungi, Coleoptera, …) |
 | **Save icon** (top right) | Save progress — the app also saves automatically |
 | **Refresh icon** (top right) | Reset & reshuffle: full deck returns, removed cards come back |
 
 Cards from the wall's top-30 panel show a small "TOP 30" tag at the top of the card front. It only says how common that pest is - it never gives the name away, and the back of the card is the sheet exactly as printed.
+
+The clues are deliberately weak, and they appear as small pills in that same blank strip at the top of the front. They are only the 12 terms the examiner prints at the foot of the Part 7 sheet, so they narrow down the classification half of the question without ever naming the pest: nothing printed on the card itself - family, host, damage - is offered. There is no clue for the virus, bacteria, nematode, disorder and snail cards, because that word bank has no term for them, and the button is off while the card is showing its back.
 
 The First-test filter leaves two sheets out on purpose (Budworm, Cossid Moth): they are photographed off the wall but are not on the examiner's list for this test, so they are simply not in that filter.
 
